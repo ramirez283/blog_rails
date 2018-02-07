@@ -1,7 +1,7 @@
 <% @articles.each do |article| %>
     <h1><%= article.title %></h1>
     <div>
-        <%= article.body%> - <%= link_to "Eliminar", article, method: :delete %>
+        <%= article.body%> - <%= link_to "Eliminar", article, method: :delete, class:"btn btn-outline-danger" %>
     </div>
     <br>
 <% end %>
